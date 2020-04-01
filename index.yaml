@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  epc:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2020-04-01T10:52:46.065103363+02:00"
+    description: A Helm chart for Open5gs
+    digest: 597d8be453702b9a01dbf427a1b75e03543d4f4b0cb9066f7c56501411327ac8
+    name: epc
+    type: application
+    urls:
+    - epc-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-04-01T10:52:46.064752454+02:00"
