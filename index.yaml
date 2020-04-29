@@ -3,7 +3,7 @@ entries:
   epc:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-04-27T10:43:13.850102375+02:00"
+    created: "2020-04-29T11:45:33.619474561+02:00"
     description: A Helm chart for Open5gs
     digest: 597d8be453702b9a01dbf427a1b75e03543d4f4b0cb9066f7c56501411327ac8
     name: epc
@@ -14,12 +14,12 @@ entries:
   nginx-custom:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-04-27T10:43:13.850526242+02:00"
+    created: "2020-04-29T11:45:33.619952217+02:00"
     description: A content customizable nginx deployment
-    digest: 7695096586017bc6ae94361839749e93701bf5f07b2eee697d283aa01a1e889e
+    digest: 2d4097fd4247959b6e5c55ee7997c5a43ab2f0c2c6898a5fe12f83767bba7e8d
     name: nginx-custom
     type: application
     urls:
     - nginx-custom-0.1.0.tgz
     version: 0.1.0
-generated: "2020-04-27T10:43:13.849616801+02:00"
+generated: "2020-04-29T11:45:33.617999487+02:00"
