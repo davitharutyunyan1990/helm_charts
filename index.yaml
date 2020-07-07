@@ -3,7 +3,7 @@ entries:
   mynginx:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-07-07T09:21:38.036253506+02:00"
+    created: "2020-07-07T09:35:31.435303926+02:00"
     description: My custom nginx chart
     digest: 407c7c62f72a2093ffcb0d23653e7de7dc8ba100417c22624d4a64a5e303ae86
     name: mynginx
@@ -13,12 +13,12 @@ entries:
   nginx-custom:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-07-07T09:21:38.036756456+02:00"
+    created: "2020-07-07T09:35:31.435717776+02:00"
     description: A content customizable nginx deployment
-    digest: 0e54fe430d666726604e74319297a41aef61cb47ff1877fdbaadeb1a26709ec3
+    digest: 17cdb733455a6d2bdd45c99a7a23d55d174674c3454aae4fe902c91dcdfada89
     name: nginx-custom
     type: application
     urls:
     - nginx-custom-0.1.0.tgz
     version: 0.1.0
-generated: "2020-07-07T09:21:38.035854299+02:00"
+generated: "2020-07-07T09:35:31.43496126+02:00"
