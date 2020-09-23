@@ -1,0 +1,69 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "additionalProperties": true,
+    "required": [
+        "useCustomContent",
+        "replicaCount",
+        "port",
+        "nodeSelector"
+    ],
+    "properties": {
+        "useCustomContent": {
+            "$id": "#/properties/useCustomContent",
+            "type": "string",
+            "title": "The Usecustomcontent Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Yes"
+            ]
+        },
+        "replicaCount": {
+            "$id": "#/properties/replicaCount",
+            "type": "integer",
+            "title": "The Replicacount Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1.0
+            ]
+        },
+        "port": {
+            "$id": "#/properties/port",
+            "type": "integer",
+            "title": "The Port Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                80.0
+            ]
+        },
+        "servicename": {
+            "$id": "#/properties/servicename",
+            "type": "string",
+            "title": "The Servicename Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "my-service-name"
+            ]
+        },
+        "nodeSelector": {
+            "$id": "#/properties/nodeSelector",
+            "type": "object",
+            "title": "The Nodeselector Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "alias": "cloud"
+                }
+            ]
+        }
+    }
+}

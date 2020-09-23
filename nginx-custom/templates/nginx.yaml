@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}
+  template:
+    metadata:
+      name: {{ .Release.Name }}
+      labels:
+        app: {{ .Release.Name }}
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        {{ if eq .Values.useCustomContent "Yes" }}
+        volumeMounts:
+        - name: www-volume
+          mountPath: /usr/share/nginx/html
+      volumes:
+      - name: www-volume
+        configMap:
+          name: {{ printf "%s-www-data" .Release.Name }}
+      {{- end }}
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: {{ template "nginx.servicename" . }}
+spec:
+  {{- if .Values.nodePort }}
+  type: NodePort
+  {{- end }}
+  selector:
+    app: {{ .Release.Name }}
+  ports:
+  - name: web
+    protocol: TCP
+    port: {{ .Values.port }}
+    targetPort: 80
+    {{- if .Values.nodePort }}
+    nodePort: {{ toYaml .Values.nodePort}}
+    {{- end }}
+

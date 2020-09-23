@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-www-data" .Release.Name }}
+data: {{ toYaml .Values.websiteData | nindent 2 }}
+
