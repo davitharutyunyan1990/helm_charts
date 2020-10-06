@@ -3,9 +3,9 @@ entries:
   bsaf:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-06T16:07:39.056063035+02:00"
+    created: "2020-10-06T16:20:44.387432406+02:00"
     description: A Helm chart for Kubernetes
-    digest: c8782fa96d1a2f2270f7200cc7d76c21fffa7da95d99cdefd7a3fdc0ad442046
+    digest: d9905a78d157aa8defba2c1f352e10df410b736f980c1d1b9ff3284159743529
     name: bsaf
     type: application
     urls:
@@ -14,9 +14,9 @@ entries:
   bsaf2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-06T16:07:39.056379953+02:00"
+    created: "2020-10-06T16:20:44.387708798+02:00"
     description: A Helm chart for Kubernetes
-    digest: fd3990a06828e42f86f6612ed610e8f9a79f7807a480ce072a791c479cbff570
+    digest: ff641157ebb9e1c1ed09b53f8ca8eb7896fccf10ecb9ff781558e8aa43e12082
     name: bsaf2
     type: application
     urls:
@@ -25,7 +25,7 @@ entries:
   mynginx:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-06T16:07:39.056584933+02:00"
+    created: "2020-10-06T16:20:44.387909251+02:00"
     description: My custom nginx chart
     digest: 407c7c62f72a2093ffcb0d23653e7de7dc8ba100417c22624d4a64a5e303ae86
     name: mynginx
@@ -35,7 +35,7 @@ entries:
   nginx-custom:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-06T16:07:39.056851655+02:00"
+    created: "2020-10-06T16:20:44.388167643+02:00"
     description: A content customizable nginx deployment
     digest: 17cdb733455a6d2bdd45c99a7a23d55d174674c3454aae4fe902c91dcdfada89
     name: nginx-custom
@@ -43,4 +43,4 @@ entries:
     urls:
     - nginx-custom-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-06T16:07:39.054330479+02:00"
+generated: "2020-10-06T16:20:44.386972026+02:00"
