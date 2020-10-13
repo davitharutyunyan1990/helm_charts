@@ -3,7 +3,7 @@ entries:
   bsaf1:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-09T14:32:55.008969523+02:00"
+    created: "2020-10-13T18:00:41.348232189+02:00"
     description: A Helm chart for Kubernetes
     digest: c8773af73a4cbe119f9aaa626ebe32498272b506d749417d7ffb625bdf29b034
     name: bsaf1
@@ -11,10 +11,21 @@ entries:
     urls:
     - bsaf1-0.1.0.tgz
     version: 0.1.0
+  bsaf1-demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-10-13T18:00:41.34865948+02:00"
+    description: A Helm chart for Kubernetes
+    digest: e7f93a767637a0e6602e4627c86aab8ca3d7404cff5d1ae640e6c7a27c2e460f
+    name: bsaf1-demo
+    type: application
+    urls:
+    - bsaf1-demo-0.1.0.tgz
+    version: 0.1.0
   bsaf2:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-10-09T14:32:55.009263246+02:00"
+    created: "2020-10-13T18:00:41.349090468+02:00"
     description: A Helm chart for Kubernetes
     digest: 5dc78354e725dbe842e4a368a7afe19cd5fff86fcd0cb979d580d8ef57c97d78
     name: bsaf2
@@ -22,10 +33,21 @@ entries:
     urls:
     - bsaf2-0.1.0.tgz
     version: 0.1.0
+  bsaf2-demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-10-13T18:00:41.349345557+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 267ec5419973a78b7d4e519dddf84fb1b774566dc8f5a2f892b98ca7143895f3
+    name: bsaf2-demo
+    type: application
+    urls:
+    - bsaf2-demo-0.1.0.tgz
+    version: 0.1.0
   mynginx:
   - apiVersion: v1
     appVersion: "1"
-    created: "2020-10-09T14:32:55.014734613+02:00"
+    created: "2020-10-13T18:00:41.349514671+02:00"
     description: My custom nginx chart
     digest: 407c7c62f72a2093ffcb0d23653e7de7dc8ba100417c22624d4a64a5e303ae86
     name: mynginx
@@ -35,7 +57,7 @@ entries:
   nginx-custom:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2020-10-09T14:32:55.015250724+02:00"
+    created: "2020-10-13T18:00:41.349782943+02:00"
     description: A content customizable nginx deployment
     digest: 17cdb733455a6d2bdd45c99a7a23d55d174674c3454aae4fe902c91dcdfada89
     name: nginx-custom
@@ -43,4 +65,4 @@ entries:
     urls:
     - nginx-custom-0.1.0.tgz
     version: 0.1.0
-generated: "2020-10-09T14:32:55.008471017+02:00"
+generated: "2020-10-13T18:00:41.347710066+02:00"
