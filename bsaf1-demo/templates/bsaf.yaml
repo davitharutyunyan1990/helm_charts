@@ -1,0 +1,53 @@
+---
+apiVersion: v1
+data:
+  another.html: "another hello!"
+  index.html: hello!
+kind: ConfigMap
+metadata:
+  name: {{ printf "%s-www-data" .Release.Name }}
+--- 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: {{ .Release.Name }}
+spec: 
+  replicas: {{ .Values.replicaCount }}
+  selector: 
+    matchLabels: 
+      app: {{ .Release.Name }}
+  template: 
+    metadata: 
+      labels: 
+        app: {{ .Release.Name }}
+      name: {{ .Release.Name }}
+    spec: 
+      containers: 
+        - 
+          image: "ninask92/demo:bsa1"
+          name: bsaf
+          volumeMounts: 
+            - 
+              mountPath: /usr/share/nginx/html
+              name: www-volume
+      volumes: 
+        - 
+          configMap: 
+            name: {{ printf "%s-www-data" .Release.Name }}
+          name: www-volume
+--- 
+apiVersion: v1
+kind: Service
+metadata: 
+  name: {{ printf "%s-service" .Release.Name }} 
+spec: 
+  ports: 
+    - 
+      name: web
+#      nodePort: 31135
+      port: 5000
+      protocol: TCP
+      targetPort: 5000
+  selector: 
+    app: {{ .Release.Name }}
+  type: NodePort
