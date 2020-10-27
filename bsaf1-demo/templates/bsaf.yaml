@@ -44,7 +44,7 @@ spec:
   ports: 
     - 
       name: web
-#      nodePort: 31135
+      nodePort: 31135
       port: 5000
       protocol: TCP
       targetPort: 5000
