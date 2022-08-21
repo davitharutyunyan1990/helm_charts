@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: {{ .Release.imageName }}:{{ .Release.imageTag }}
         {{ if eq .Values.useCustomContent "Yes" }}
         volumeMounts:
         - name: www-volume
