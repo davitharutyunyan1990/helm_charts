@@ -1,0 +1,79 @@
+apiVersion: v1
+entries:
+  bsaf1:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-09T10:09:52.393449888+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c8773af73a4cbe119f9aaa626ebe32498272b506d749417d7ffb625bdf29b034
+    name: bsaf1
+    type: application
+    urls:
+    - bsaf1-0.1.0.tgz
+    version: 0.1.0
+  bsaf1-demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-09T10:09:52.393645551+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 144a2510110cdeed6522684a7a7683cd3f95c73d40e950ab72765a98eb894862
+    name: bsaf1-demo
+    type: application
+    urls:
+    - bsaf1-demo-0.1.0.tgz
+    version: 0.1.0
+  bsaf2:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-09T10:09:52.393806229+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 5dc78354e725dbe842e4a368a7afe19cd5fff86fcd0cb979d580d8ef57c97d78
+    name: bsaf2
+    type: application
+    urls:
+    - bsaf2-0.1.0.tgz
+    version: 0.1.0
+  bsaf2-demo:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-09T10:09:52.393974694+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 72b82aecdcacbf027165cf8c1f40606ba68eab6faa503a83d525635c68e60f39
+    name: bsaf2-demo
+    type: application
+    urls:
+    - bsaf2-demo-0.1.0.tgz
+    version: 0.1.0
+  dpa:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-09-09T10:09:52.394183768+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 3163a374d0980d24c489babfcbe73566541724ef450ca8a6bca564bef3b3bf84
+    name: dpa
+    type: application
+    urls:
+    - dpa-0.1.2-remote.tgz
+    version: 0.1.2-remote
+  mynginx:
+  - apiVersion: v1
+    appVersion: "1"
+    created: "2022-09-09T10:09:52.394349345+02:00"
+    description: My custom nginx chart
+    digest: 407c7c62f72a2093ffcb0d23653e7de7dc8ba100417c22624d4a64a5e303ae86
+    name: mynginx
+    urls:
+    - mynginx-1.2.tgz
+    version: "1.2"
+  nginx-custom:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-09-09T10:09:52.394564719+02:00"
+    description: A content customizable nginx deployment
+    digest: 17cdb733455a6d2bdd45c99a7a23d55d174674c3454aae4fe902c91dcdfada89
+    name: nginx-custom
+    type: application
+    urls:
+    - nginx-custom-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-09-09T10:09:52.393121743+02:00"
